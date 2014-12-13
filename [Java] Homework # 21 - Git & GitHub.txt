@@ -1,0 +1,57 @@
+Hello World!
+
+
+[Java] Homework # 21 - Git & GitHub
+
+
+01.                        Install Git 2.1.0 (http://git-scm.com)
+ 
+02.                        Configure git:
+ 
+git config --global user.name "Your_first_Name Your_last_name"
+git config --global user.email "your_email@address.com"
+ 
+Verification:
+ 
+git config --list
+ 
+03.                        Learn Git (http://git-scm.com/book)
+ 
+04.                        Watch git video tutorial: Lynda.com - Git Essential Training (download)
+ 
+
+05.                        Create a GitHub free account: http://github.com
+ 
+06.                        Learn GitHub: http://learn.github.com/         Got 15 minutes and want to learn Git?
+ 
+07.                        Create GitHub repository "java" (https://github.com/ > New repository > Repository name "java")
+ 
+08.                        Create new directory on your computer "java" c:\java or /java
+ 
+09.                        Create an Local Repository: C:\java>git init or  $ /java>git init
+ 
+10.                        Configure your Git to use as remote origin GitHub (http://github.com/github_account/java.git)
+ 
+C:\java>git remote add origin git@github.com:[github_account]/java.git
+ 
+11.                        Create text file "file.txt" C:\java\file.txt
+ 
+12.                        Enter text into it (Hello …)
+ 
+13.                        Track it: C:\java>git add .
+ 
+14.                        Commit it: C:\java>git commit -m " Initial commit"
+ 
+15.                        Push it to GitHub: C:\java>git push origin master
+ 
+16.                        Change the text: Hello World!
+ 
+17.                        Track it: C:\java>git add .
+ 
+18.                        Commit it: C:\java>git commit -m "This is my second commit"
+ 
+
+19.                        Push it to GitHub: C:\java>git push origin master
+ 
+ 
+
