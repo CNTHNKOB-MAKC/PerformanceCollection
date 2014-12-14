@@ -9,21 +9,21 @@ public class ConstantPoolVSHeapEQUALS
 
 			String st2 = new String("This string is going inside"); // HEAP ,
 																	// which
-																	// means
-																	// that st2
-																	// is not at
-																	// the same
-																	// location
-																	// as the
-																	// st1 and
-																	// are
-																	// LOCATION
-																	// is
-																	// different
-																	// but
-																	// content
-																	// is the
-																	// same
+			// means
+			// that st2
+			// is not at
+			// the same
+			// location
+			// as the
+			// st1 and
+			// are
+			// LOCATION
+			// is
+			// different
+			// but
+			// content
+			// is the
+			// same
 
 			String st3 = "This string is going inside"; // both st1 and st3 are
 														// pointing to the same

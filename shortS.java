@@ -1,37 +1,51 @@
-package Benchmark;
+package Wrapper;
 
 import java.util.concurrent.TimeUnit;
 
-public class shortS
+class ShortS
 	{
-		/*
-		 * byte, Byte short, Short int, Integer,
-		 * AtomicInteger(mutable/changable), BigInteger(immutable) long Long
-		 * AtomicLong float Float double Double BigDecimal(immutable) char
-		 * String Character boolean Boolean
-		 */
+
 		public static void main(String[] args)
 		{
+			Short s = -127;
 
 			final long start = System.currentTimeMillis();
 			long timeSecondsStart = TimeUnit.MILLISECONDS.toSeconds(start);
-			short sum = -32_768;
 
-			// byte max = 255 ;
 			for (int i = 0; i < 1_000_000_000; i++)
+
 			{
-				sum++;
+				s++;
+
 			}
+
 			final long finish = System.currentTimeMillis();
+			long timeSecondsFinish = TimeUnit.MILLISECONDS.toSeconds(start);
 
-			long timeSecondsfinish = TimeUnit.MILLISECONDS.toSeconds(finish);
-			System.out.println("Using short: " + sum + " Elapsed  seconds: "
-					+ (timeSecondsfinish - timeSecondsStart));
-			System.out.println("OR in milliseconds");
-			System.out.println("Using short: " + sum
-					+ " Elapsed milliseconds: " + (finish - start));
-			// System.out.println("short - adding value to itself  sum:  " + "="
-			// / + sum);
+			System.out.println("Using SHORT: " + s + " Elapsed milliseconds: "
+					+ (finish - start) + " or "
+					+ (timeSecondsFinish - timeSecondsStart) + " seconds");
 
+			short s1 = -127;
+
+			final long start1 = System.currentTimeMillis();
+			long timeSecondsStart1 = TimeUnit.MILLISECONDS.toSeconds(start1);
+
+			for (int i = 0; i < 1_000_000_000; i++)
+
+			{
+				s1++;
+
+			}
+
+			final long finish1 = System.currentTimeMillis();
+			long timeSecondsFinish1 = TimeUnit.MILLISECONDS.toSeconds(finish1);
+
+			System.out.println("Using short: " + s1 + " Elapsed milliseconds: "
+					+ (finish1 - start1));
+			System.out.println("The short is faster than the SHORT by : "
+					+ ((finish - start) - (finish1 - start1))
+					+ "    milliseconds");
 		}
+
 	}

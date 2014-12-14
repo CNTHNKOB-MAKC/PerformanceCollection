@@ -1,25 +1,42 @@
-package Benchmark;
+package Wrapper;
 
-public class doubleD
+public class DoubleD
 	{
+
 		public static void main(String[] args)
 		{
 			final long start = System.currentTimeMillis();
-			double sum = 888888888888888888.8888888888888888888888888888888888888888d;
 
-			int max = 1_000_000_000;
+			double d = 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999.99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999d;
 
-			for (int i = 0; i < max; i++)
+			for (int i = 0; i < 1_000_000_000; i++)
+
 			{
-
-				sum++;
+				d++;
 
 			}
-
 			final long finish = System.currentTimeMillis();
 
-			System.out.println("Using double:  " + sum
-					+ "   Elapsed time in milliseconds  " + (finish - start));
+			System.out.println("Using double: " + d + " Elapsed milliseconds: "
+					+ (finish - start));
 
+			final long start1 = System.currentTimeMillis();
+
+			Double d1 = 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999.99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999d;
+
+			for (int i = 0; i < 1_000_000_000; i++)
+
+			{
+				d1++;
+
+			}
+			final long finish1 = System.currentTimeMillis();
+
+			System.out.println("Using DOUBLE: " + d1
+					+ " Elapsed milliseconds: " + (finish1 - start1));
+			System.out.println("The double is faster than the DOUBLE by : "
+					+ ((finish1 - start1) - (finish - start))
+					+ "    milliseconds");
 		}
+
 	}
