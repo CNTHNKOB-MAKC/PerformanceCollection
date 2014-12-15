@@ -48,7 +48,13 @@ class ByteB
 			System.out.println("The byte is faster than the BYTE by : "
 					+ ((finish - start) - (finish1 - start1))
 					+ "    milliseconds");
+			double BYTESpeed = (finish - start);
+			double byteSpeed = (finish1 - start1);
+			System.out.println("OMG! byte is " + (BYTESpeed / byteSpeed)
+					+ "  times faster than BYTE");
+
 			/* Primitive Data Type into the Wrapper classes */
+
 			int in1 = 21113;
 			int in = 213;
 

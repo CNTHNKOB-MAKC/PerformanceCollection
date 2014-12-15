@@ -48,11 +48,16 @@ class IntegerBoxing
 				 * " Elapsed      seconds: " + (timeSecondsfinish1 -
 				 * timeSecondsStart1));
 				 */
-				System.out.println("Using Integer: " + sumf1
+				System.out.println("Using integer: " + sumf1
 						+ " Elapsed milliseconds: " + (finish1 - start1));
 				System.out.println("The int is faster than the INTEGER by : "
 						+ ((finish - start) - (finish1 - start1))
 						+ "    milliseconds");
+				double INTSpeed = (finish - start);
+				double intSpeed = (finish1 - start1);
+				System.out.println("OMG! int is "
+						+ ((finish - start) / (finish1 - start1))
+						+ "  times faster than INTEGER");
 			}
 		}
 	}

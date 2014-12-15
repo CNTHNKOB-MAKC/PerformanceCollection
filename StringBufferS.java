@@ -49,7 +49,7 @@ class StringBufferS
 			System.out.println("Using StringBuilder, elapsed milliseconds: "
 					+ result11);
 			double resulte = resultd1 / result;
-			double result1 = resultd1 / result11;
+			double result1 = resultd1 / result11;// ee
 			double result2 = result / result11;
 
 			System.out.println("StringBuffer is " + resulte

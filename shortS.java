@@ -46,6 +46,11 @@ class ShortS
 			System.out.println("The short is faster than the SHORT by : "
 					+ ((finish - start) - (finish1 - start1))
 					+ "    milliseconds");
+			double SHRTSpeed = (finish - start);
+			double shrtSpeed = (finish1 - start1);
+			System.out.println("OMG! short is " + (SHRTSpeed / shrtSpeed)
+					+ "  times faster than SHORT");
+
 		}
 
 	}

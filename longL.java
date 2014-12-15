@@ -37,6 +37,10 @@ public class LongL
 			System.out.println("The long is faster than the LONG by : "
 					+ ((finish1 - start1) - (finish - start))
 					+ "    milliseconds");
+			double lngSpeed = (finish - start);
+			double LNGSpeed = (finish1 - start1);
+			System.out.println("OMG! long is " + (LNGSpeed / lngSpeed)
+					+ "  times faster than LONG");
 		}
 
 	}

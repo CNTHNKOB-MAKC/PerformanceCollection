@@ -32,5 +32,10 @@ public class FloatF
 			System.out.println("The float is faster than the FLOAT by : "
 					+ ((finish1 - start1) - (finish - start))
 					+ "    milliseconds");
+			double fltSpeed = (finish - start);
+			double FLTSpeed = (finish1 - start1);
+			System.out.println("OMG! float is " + (FLTSpeed / fltSpeed)
+					+ "  times faster than FLOAT");
+
 		}
 	}
